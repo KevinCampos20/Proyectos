@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora De Masa Corporal</title>
+    <link rel="stylesheet" href="./js/css/estilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Calculadora de Masa Corporal</h1>
+        <form action="" method="get" onsubmit="return false;">
+            <input type="number" name="identificacion" id="identificacion" placeholder="Ingrese la identificación del paciente">
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del paciente">
+            <input type="number" name="estatura" id="estatura" placeholder="Ingrese la estatura del paciente en metros">
+            <input type="number" name="peso" id="peso" placeholder="Ingrese el peso del paciente en kilos">
+            <input type="button" value="Calcular" onclick="buscar()">
+        </form>
+    </div>    
+
+    <!-- Modal Calculadora de Masa Corporal -->
+    <div id="modal" style="display:none;" class="modal-overlay">
+        <div class="modal-box">
+            <div id="contenido-calculadora-de-masa-corporal"></div>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

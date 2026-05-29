@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura Web</title>
+    <link rel="stylesheet" href="./js/css/estilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Factura Web</h1>
+        <form action="" method="get" onsubmit="return false;">
+            <input type="number" name="ide" id="ide" placeholder="Ingrese su identificación"> <br>
+            <input type="text" name="nom" id="nom" placeholder="Ingrese sus nombres y apellidos"> <br>
+            <input type="text" name="dir" id="dir" placeholder="Ingrese su dirección"> <br>
+            <input type="number" name="tel" id="tel" placeholder="Ingrese su número de teléfono"> <br>
+            <input type="number" name="nfac" id="nfac" placeholder="Ingrese el número de la factura"> <br>
+            <input type="text" name="fecha" id="fecha" placeholder="Ingrese la fecha de la factura"> <br>
+            <input type="text" name="rs" id="rs" placeholder="Ingrese la razón social"> <br>
+            <input type="text" name="p" id="p" placeholder="Ingrese el producto"> <br>
+            <input type="number" name="cant" id="cant" placeholder="Ingrese la cantidad del producto"> <br>
+            <input type="number" name="vu" id="vu" placeholder="Ingrese el valor unitario del producto"> <br>
+            <input type="button" value="Mostrar factura" onclick="buscar()">
+        </form>
+    </div>
+
+    <div id="modal" style="display:none;" class="modal-overlay">
+        <div class="modal-box">
+            <div id="contenido-factura"></div>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

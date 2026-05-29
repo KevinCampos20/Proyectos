@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora De Masa Corporal</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+    <div id="pantalla-login" class="contenedor">
+        <h1>Iniciar Sesión</h1>
+        <input type="text" id="usuario" placeholder="Ingrese su usuario">
+        <input type="password" id="contrasena" placeholder="Ingrese su contraseña">
+        <p id="error-login" class="error-msg" style="display:none;">Usuario o contraseña incorrectos. No está permitido entrar al sistema.</p>
+        <input type="button" value="Ingresar" onclick="iniciarSesion()">
+    </div>
+
+    <div id="pantalla-calculadora" class="contenedor" style="display:none;">
+        <h1>Calculadora de Masa Corporal</h1>
+        <input type="number" id="identificacion" placeholder="Ingrese la identificación del paciente">
+        <input type="text" id="nombre" placeholder="Ingrese el nombre del paciente">
+        <input type="number" id="estatura" placeholder="Ingrese la estatura del paciente en metros">
+        <input type="number" id="peso" placeholder="Ingrese el peso del paciente en kilos">
+        <input type="button" value="Calcular" onclick="buscar()">
+    </div>
+
+    <div id="modal" style="display:none;" class="modal-overlay">
+        <div class="modal-box">
+            <div id="contenido-calculadora-de-masa-corporal"></div>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

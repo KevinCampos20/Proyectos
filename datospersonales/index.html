@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Datos Personales</h1>
+        <form action="" method="get" onsubmit="return false;">
+            <input type="text" name="identificacion" id="identificacion" placeholder="Ingrese su identificación"> <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"> <br>
+            <input type="number" name="edad" id="edad" placeholder="Ingrese su edad" min="0" max="150"> <br>
+            <input type="date" name="fecha_de_nacimiento" id="fecha_de_nacimiento"> <br>
+            <input type="email" name="correo" id="correo" placeholder="Ingrese su correo"> <br>
+            <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su teléfono"> <br>
+            <input type="button" value="Mostrar Datos" onclick="buscar()">
+        </form>
+    </div>
+
+    <div id="modal" style="display:none;" class="modal-overlay">
+        <div class="modal-box">
+            <div id="datos-personales"></div>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

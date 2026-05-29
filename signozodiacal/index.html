@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signo Zodiacal</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Signo Zodiacal</h1>
+        <form action="" method="get" onsubmit="return false;">
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"> <br>
+            <input type="number" name="dia" id="dia" placeholder="Ingrese su dia de nacimiento"> <br>
+            <input type="number" name="mes" id="mes" placeholder="Ingrese su mes de nacimiento"> <br>
+            <input type="number" name="año" id="año" placeholder="Ingrese su año de nacimiento"> <br>
+            <input type="button" value="Buscar Signo Zodiacal" onclick="buscar()">
+        </form>
+    </div>
+
+    <div id="modal" style="display:none;" class="modal-overlay">
+        <div class="modal-box">
+            <div id="signo-zodiacal"></div>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

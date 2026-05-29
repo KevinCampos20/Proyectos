@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+<div class="contenedor">
+<h1>Calculadora</h1>
+<form action="" method="get">
+<input type="text" id="n2" name="n2" placeholder=" ">
+<input type="text" id="n1" name="n1" placeholder="0">
+
+<input type="button" id="porcentaje" value="%" onclick="opporciento()">
+<input type="button" id="limpiar" value="C" name="limpiar" onclick="borrar()">
+<input type="button" id="back" value="⌫" onclick="opback()">
+<input type="button" id="entre" value="/" onclick="opdividir()">
+
+<input type="button" id="siete" value="7" name="siete" onclick="nsiete()">
+<input type="button" id="ocho" value="8" name="ocho" onclick="nocho()">
+<input type="button" id="nueve" value="9" name="nueve" onclick="nnueve()">
+<input type="button" id="por" value="*" onclick="opmultiplicar()">
+
+<input type="button" id="cuatro" value="4" name="cuatro" onclick="ncuatro()">
+<input type="button" id="cinco" value="5" name="cinco" onclick="ncinco()">
+<input type="button" id="seis" value="6" name="seis" onclick="nseis()">
+<input type="button" id="menos" value="-" name="menos" onclick="opmenos()">
+
+<input type="button" id="uno" value="1" name="uno" onclick="nuno()">
+<input type="button" id="dos" value="2" name="dos" onclick="ndos()">
+<input type="button" id="tres" value="3" name="tres" onclick="ntres()">
+<input type="button" id="mas" value="+" name="mas" onclick="opmas()">
+
+<input type="button" id="mas/menos" value="+/-" onclick="opmasmenos()">
+<input type="button" id="cero" value="0" name="cero" onclick="ncero()">
+<input type="button" id="punto" value="." onclick="oppunto()">
+<input type="button" id="igual" value="=" name="igual" onclick="opigual()">
+
+</form>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

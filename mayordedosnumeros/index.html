@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor de dos números</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Mayor de dos números</h1>
+        <form action="" method="get" onsubmit="return false;">
+            <input type="number" name="n1" id="n1" placeholder="Ingrese un número"> <br>
+            <input type="number" name="n2" id="n2" placeholder="Ingrese otro número"> <br>
+            <input type="button" value="Verificar" onclick="buscar()">
+        </form>
+    </div>
+
+    <div id="modal" style="display:none;" class="modal-overlay">
+        <div class="modal-box">
+            <div id="mayor"></div>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
